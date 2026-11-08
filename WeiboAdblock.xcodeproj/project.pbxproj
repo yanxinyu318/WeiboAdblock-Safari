@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27BE50156D464BA8B8A789EE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BF804C02BA340B2A5AEAC44 /* manifest.json */; };
+		857AC3A31AEB48C29A59D838 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 7FCAAD561201477CB155943B /* content.js */; };
+		8D552647A6C74687A8692F11 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570B5945BA214E799EC62D4F /* SafariServices.framework */; };
+		AC74185F371643FB8CB1F92D /* WeiboAdblockExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FFB3AC4153EA4A8A85ECB146 /* WeiboAdblockExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE1775BFAE0E4740A2C7A3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159BD230F51B4603AD559E93 /* Assets.xcassets */; };
+		C961D5389ACC4E2A8BA10327 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D421B8813842438B81B0CF /* SafariWebExtensionHandler.swift */; };
+		F3E14C4BC8DB45669D6D796B /* WeiboAdblockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6A6F4501D453D91629010 /* WeiboAdblockApp.swift */; };
+		FA9AFC14500C48008E82E3B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BDC7830AD4F5FB3979398 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A791AB66B1084227AB30B579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF0C0CE29BB45B9B3069E2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EEAE6F2EEF741379A1A8F44;
+			remoteInfo = WeiboAdblockExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BD7F57B10714D7FAC67FB98 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC74185F371643FB8CB1F92D /* WeiboAdblockExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04D421B8813842438B81B0CF /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0BF804C02BA340B2A5AEAC44 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		159BD230F51B4603AD559E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		216EC4C2E21743B9932E92A4 /* WeiboAdblock.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WeiboAdblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		570B5945BA214E799EC62D4F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		7FCAAD561201477CB155943B /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		83A6A6F4501D453D91629010 /* WeiboAdblockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboAdblockApp.swift; sourceTree = "<group>"; };
+		A96B210A85AE4748804492BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E644E8BD9F3541C9AC2F066E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69BDC7830AD4F5FB3979398 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFB3AC4153EA4A8A85ECB146 /* WeiboAdblockExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = WeiboAdblockExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		579DB98F3F7C459CA3BED031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D552647A6C74687A8692F11 /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64769093E76442318C50AE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		688DEB4A2A7E4AA397ED25FA = {
+			isa = PBXGroup;
+			children = (
+				A2C48300D0D548CE93BD3E87 /* WeiboAdblock */,
+				D53FAD7EA57346E8B36F1D8F /* WeiboAdblockExtension */,
+				E9A995AF464D400BAE57686A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2C48300D0D548CE93BD3E87 /* WeiboAdblock */ = {
+			isa = PBXGroup;
+			children = (
+				83A6A6F4501D453D91629010 /* WeiboAdblockApp.swift */,
+				F69BDC7830AD4F5FB3979398 /* ContentView.swift */,
+				E644E8BD9F3541C9AC2F066E /* Info.plist */,
+				159BD230F51B4603AD559E93 /* Assets.xcassets */,
+			);
+			path = WeiboAdblock;
+			sourceTree = "<group>";
+		};
+		C9EEC41AB1A7470F8563C20C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BF804C02BA340B2A5AEAC44 /* manifest.json */,
+				7FCAAD561201477CB155943B /* content.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D53FAD7EA57346E8B36F1D8F /* WeiboAdblockExtension */ = {
+			isa = PBXGroup;
+			children = (
+				04D421B8813842438B81B0CF /* SafariWebExtensionHandler.swift */,
+				A96B210A85AE4748804492BB /* Info.plist */,
+				C9EEC41AB1A7470F8563C20C /* Resources */,
+			);
+			path = WeiboAdblockExtension;
+			sourceTree = "<group>";
+		};
+		E9A995AF464D400BAE57686A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				216EC4C2E21743B9932E92A4 /* WeiboAdblock.app */,
+				FFB3AC4153EA4A8A85ECB146 /* WeiboAdblockExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EEAE6F2EEF741379A1A8F44 /* WeiboAdblockExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9413ADDEADDE4534B63224E3 /* Build configuration list for PBXNativeTarget "WeiboAdblockExtension" */;
+			buildPhases = (
+				76DE7EECDD5640C3BB009445 /* Sources */,
+				79748330F9674942882B308A /* Resources */,
+				579DB98F3F7C459CA3BED031 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeiboAdblockExtension;
+			productName = WeiboAdblockExtension;
+			productReference = FFB3AC4153EA4A8A85ECB146 /* WeiboAdblockExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		825E7358FE3C4A6583AB4AF9 /* WeiboAdblock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DEEF05664BC4777B7699C78 /* Build configuration list for PBXNativeTarget "WeiboAdblock" */;
+			buildPhases = (
+				6F9169E878314FDCA47F4443 /* Sources */,
+				F8095CF6B2E641AD85F8A8F3 /* Resources */,
+				64769093E76442318C50AE7A /* Frameworks */,
+				1BD7F57B10714D7FAC67FB98 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68A03C6A3EB4441897955D4E /* PBXTargetDependency */,
+			);
+			name = WeiboAdblock;
+			productName = WeiboAdblock;
+			productReference = 216EC4C2E21743B9932E92A4 /* WeiboAdblock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF0C0CE29BB45B9B3069E2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5EEAE6F2EEF741379A1A8F44 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					825E7358FE3C4A6583AB4AF9 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BDFF68ECACDA4C96AD532490 /* Build configuration list for PBXProject "WeiboAdblock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 688DEB4A2A7E4AA397ED25FA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E9A995AF464D400BAE57686A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				825E7358FE3C4A6583AB4AF9 /* WeiboAdblock */,
+				5EEAE6F2EEF741379A1A8F44 /* WeiboAdblockExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79748330F9674942882B308A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27BE50156D464BA8B8A789EE /* manifest.json in Resources */,
+				857AC3A31AEB48C29A59D838 /* content.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8095CF6B2E641AD85F8A8F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1775BFAE0E4740A2C7A3F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F9169E878314FDCA47F4443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E14C4BC8DB45669D6D796B /* WeiboAdblockApp.swift in Sources */,
+				FA9AFC14500C48008E82E3B5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76DE7EECDD5640C3BB009445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C961D5389ACC4E2A8BA10327 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68A03C6A3EB4441897955D4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EEAE6F2EEF741379A1A8F44 /* WeiboAdblockExtension */;
+			targetProxy = A791AB66B1084227AB30B579 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00A261836CE44258925EAD85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2A92158B80624C0BA9D9DE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = WeiboAdblockExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanxinyu318.weiboadblock.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E1A617D0ED14EA9B7C1E36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WeiboAdblock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanxinyu318.weiboadblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		844BBE6914034B999542D9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E40AEAD310D4087A6CFCF30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WeiboAdblock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanxinyu318.weiboadblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF39631E7F2D470FA1EB615F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = WeiboAdblockExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanxinyu318.weiboadblock.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DEEF05664BC4777B7699C78 /* Build configuration list for PBXNativeTarget "WeiboAdblock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1A617D0ED14EA9B7C1E36B /* Debug */,
+				8E40AEAD310D4087A6CFCF30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9413ADDEADDE4534B63224E3 /* Build configuration list for PBXNativeTarget "WeiboAdblockExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF39631E7F2D470FA1EB615F /* Debug */,
+				2A92158B80624C0BA9D9DE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFF68ECACDA4C96AD532490 /* Build configuration list for PBXProject "WeiboAdblock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844BBE6914034B999542D9E7 /* Debug */,
+				00A261836CE44258925EAD85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDF0C0CE29BB45B9B3069E2C /* Project object */;
+}
